@@ -281,11 +281,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4797014056235618919, guid: 65122c4c738e14240921cf7f0c010205,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 718705526}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65122c4c738e14240921cf7f0c010205, type: 3}
 --- !u!1 &595150610
 GameObject:
@@ -405,29 +401,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &718705525 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4797014056235618919, guid: 65122c4c738e14240921cf7f0c010205,
-    type: 3}
-  m_PrefabInstance: {fileID: 588585737}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &718705526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718705525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 403bca35188a576459ec1339f1572a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 8673916526512648664, guid: 82a067807fa3ea74ba9572e42080c411, type: 3}
-  queEsJugador:
-    serializedVersion: 2
-    m_Bits: 8
-  velocidad: 5
 --- !u!1 &1127802668
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +521,7 @@ GameObject:
   - component: {fileID: 1302100581}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

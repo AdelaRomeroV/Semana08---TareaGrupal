@@ -148,7 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403bca35188a576459ec1339f1572a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8673916526512648664, guid: 82a067807fa3ea74ba9572e42080c411, type: 3}
+  prefab: {fileID: 5209872758784544258, guid: dd3ccbf91075cb34382db97ad15c8708, type: 3}
+  prefabSpawn: {fileID: 0}
   queEsJugador:
     serializedVersion: 2
     m_Bits: 8

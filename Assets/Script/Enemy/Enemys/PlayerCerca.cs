@@ -10,9 +10,10 @@ public class PlayerCerca : MonoBehaviour
     protected bool jugadorDentro = false;
 
     [SerializeField] protected GameObject prefab;
+    [SerializeField] protected GameObject prefabSpawn;
     [SerializeField] protected LayerMask queEsJugador;
 
-    private void Awake()
+    void Awake()
     {
         Inicializar();
     }
@@ -33,9 +34,21 @@ public class PlayerCerca : MonoBehaviour
         jugadorDentro = false;
         foreach (Collider collider in colliders)
         {
-            jugadorDentro = true;
+            if (collider.gameObject.CompareTag("Player"))
+            {
+                jugadorDentro = true;
+            }
         }
     }
+
+    void OnDestroy()
+    {
+        if (prefabSpawn != null)
+        {
+            Instantiate(prefabSpawn);
+        }
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
