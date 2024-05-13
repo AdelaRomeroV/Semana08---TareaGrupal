@@ -22,6 +22,7 @@ public class EnemyRangeA : PlayerCerca
         }
         else 
         {
+            CancelInvoke("Disparo");
             Caminar();
         }
     }

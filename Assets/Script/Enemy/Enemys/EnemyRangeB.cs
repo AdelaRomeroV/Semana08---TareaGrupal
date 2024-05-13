@@ -15,6 +15,7 @@ public class EnemyRangeB : PlayerCerca
         base.Detectar();
         if (jugadorDentro)
         {
+            CancelInvoke("Disparo");
             Caminar();
         }
         else
