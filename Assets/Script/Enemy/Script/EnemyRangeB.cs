@@ -15,7 +15,6 @@ public class EnemyRangeB : PlayerCerca
         base.Detectar();
         if (jugadorDentro)
         {
-            CancelInvoke("Disparo");
             Caminar();
         }
         else
@@ -37,7 +36,7 @@ public class EnemyRangeB : PlayerCerca
 
     void Disparo()
     {
-        if (player != null)
+        if (player != null && !jugadorDentro)
         {
             Instantiate(prefab, gameObject.transform);
             Invoke("Disparo", 2.5f);

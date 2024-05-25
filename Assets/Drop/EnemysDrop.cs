@@ -9,7 +9,10 @@ public class EnemysDrop : MonoBehaviour
     [ContextMenu("Drop Item")]
     public void DropItem()
     {
-        Instantiate(items[Random.Range(0,items.Length)], transform.position, Quaternion.identity);
+        if(items != null)
+        {
+            Instantiate(items[Random.Range(0, items.Length)], transform.position, Quaternion.identity);
+        }
     }
 
 

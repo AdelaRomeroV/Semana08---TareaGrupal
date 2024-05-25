@@ -22,7 +22,6 @@ public class EnemyRangeA : PlayerCerca
         }
         else 
         {
-            CancelInvoke("Disparo");
             Caminar();
         }
     }
@@ -37,7 +36,7 @@ public class EnemyRangeA : PlayerCerca
 
     void Disparo()
     {
-        if(player != null)
+        if(player != null && jugadorDentro)
         {
             Instantiate(prefab, gameObject.transform);
             Invoke("Disparo", 2.5f);

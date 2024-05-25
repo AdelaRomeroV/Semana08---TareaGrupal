@@ -7,10 +7,10 @@ public class PlayerCerca : MonoBehaviour
 {
     protected GameObject player;
     protected float radioDeDeteccion = 5f;
-    protected bool jugadorDentro = false;
+    [SerializeField] protected bool jugadorDentro = false;
 
     [SerializeField] protected GameObject prefab;
-    [SerializeField] protected GameObject prefabSpawn;
+    //[SerializeField] protected GameObject prefabSpawn;
     [SerializeField] protected LayerMask queEsJugador;
 
     void Awake()
@@ -41,13 +41,13 @@ public class PlayerCerca : MonoBehaviour
         }
     }
 
-    void OnDestroy()
+    /*void OnDestroy()
     {
         if (prefabSpawn != null)
         {
             Instantiate(prefabSpawn);
         }
-    }
+    }*/
 
     private void OnDrawGizmosSelected()
     {

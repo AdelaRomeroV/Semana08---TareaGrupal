@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 4688302572867574782}
   - component: {fileID: 4688921901925142330}
   - component: {fileID: 9087108782234276050}
+  - component: {fileID: 3445525418817565686}
   m_Layer: 0
   m_Name: EnemyRangeB
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,12 +150,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403bca35188a576459ec1339f1572a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jugadorDentro: 0
   prefab: {fileID: 5209872758784544258, guid: dd3ccbf91075cb34382db97ad15c8708, type: 3}
-  prefabSpawn: {fileID: 0}
   queEsJugador:
     serializedVersion: 2
     m_Bits: 8
-  velocidad: 5
+  velocidad: 3
 --- !u!114 &9087108782234276050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,3 +169,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 15
+--- !u!114 &3445525418817565686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797014056235618919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096df458d36e4348ba6f098d56adba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: -8157769363305758219, guid: 18b67679aa498d44a8dfef0b6232613c, type: 3}
+  - {fileID: 8836112841819190079, guid: bd17601559b182a4dbe913cc3f456d0c, type: 3}
