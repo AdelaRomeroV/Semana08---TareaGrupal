@@ -14,12 +14,12 @@ public class PlayerArma : Arma
         if (CountBullet > 0)
         {
             
-            if (Input.GetMouseButtonDown(0)) 
+            if (Input.GetMouseButton(0)) 
             {
                 GetDisparo(0);
             }
 
-            if(Input.GetMouseButtonDown(1)) 
+            if(Input.GetMouseButton(1)) 
             {
                 GetDisparo(1);
             }
