@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Ammo : Item
 {
-    // Start is called before the first frame update
-    void Start()
+    public int ammo;
+
+    private void Start()
     {
-        
+            ammo++;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

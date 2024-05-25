@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Cash : Item
 {
-    // Start is called before the first frame update
+    public int cash;
     void Start()
     {
-        
+        cash++;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
