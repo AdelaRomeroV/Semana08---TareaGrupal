@@ -10,6 +10,8 @@ public class EnemyLife : Life
         {
             ChangeLife(-other.gameObject.gameObject.GetComponent<Damage>().GetDamage());
             Destroy(other.gameObject);
+
+            GetComponent<EnemysDrop>().DropItem();
         }
 
     }

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44af720466dbc344499dafb3d4e86634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 20
+  life: 100000
 --- !u!1 &228087363
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +525,11 @@ PrefabInstance:
       propertyPath: shootPoint
       value: 
       objectReference: {fileID: 577445562}
+    - target: {fileID: 3534411129283916312, guid: 3ccb8ae2996b69246ba6c7a1370c6dd3,
+        type: 3}
+      propertyPath: CountBullet
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4149601111085443657, guid: 3ccb8ae2996b69246ba6c7a1370c6dd3,
         type: 3}
       propertyPath: m_LocalPosition.x
