@@ -223,6 +223,28 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3445525418817565686, guid: 65122c4c738e14240921cf7f0c010205,
+        type: 3}
+      propertyPath: items.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445525418817565686, guid: 65122c4c738e14240921cf7f0c010205,
+        type: 3}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: -8157769363305758219, guid: 18b67679aa498d44a8dfef0b6232613c,
+        type: 3}
+    - target: {fileID: 3445525418817565686, guid: 65122c4c738e14240921cf7f0c010205,
+        type: 3}
+      propertyPath: items.Array.data[1]
+      value: 
+      objectReference: {fileID: 327591247336408585, guid: d6c488be9cb4aa848ad08f4ed3d5dd27,
+        type: 3}
+    - target: {fileID: 3445525418817565686, guid: 65122c4c738e14240921cf7f0c010205,
+        type: 3}
+      propertyPath: items.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3636628949530873751, guid: 65122c4c738e14240921cf7f0c010205,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -464,10 +486,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3534411129283916312, guid: 3ccb8ae2996b69246ba6c7a1370c6dd3,
+        type: 3}
+      propertyPath: bullet.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534411129283916312, guid: 3ccb8ae2996b69246ba6c7a1370c6dd3,
+        type: 3}
+      propertyPath: bullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 4346065334024911803, guid: 5d60140c8d89ee448b5353429d9d3273,
+        type: 3}
     - target: {fileID: 7754231243068496341, guid: 3ccb8ae2996b69246ba6c7a1370c6dd3,
         type: 3}
       propertyPath: life
-      value: 1000
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

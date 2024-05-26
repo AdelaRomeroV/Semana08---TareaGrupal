@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Life : Item
+public class Life : MonoBehaviour
 {
     [SerializeField] protected int life;
 
@@ -14,4 +14,5 @@ public class Life : Item
             Destroy(gameObject);
         }
     }
+
 }
