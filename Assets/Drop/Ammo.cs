@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Ammo : Item
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Player"))
+        {
+            PlayerArma playerArma = other.gameObject.GetComponent<PlayerArma>();
+            if (playerArma != null)
+            {
+                playerArma.SumarBalas(count);
+                Destroy(gameObject);
+            }
+        }
     }
 }

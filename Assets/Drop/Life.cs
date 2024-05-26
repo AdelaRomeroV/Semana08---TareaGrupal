@@ -6,7 +6,7 @@ public class Life : MonoBehaviour
 {
     [SerializeField] protected int life;
 
-    protected virtual void ChangeLife(int value)
+    public virtual void ChangeLife(int value)
     {
         life += value;
         if (life <= 0)

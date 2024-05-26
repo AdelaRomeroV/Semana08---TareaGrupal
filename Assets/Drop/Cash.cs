@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Cash : Item
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Player"))
+        {
+            DineroPlayer dineroPlayer = other.gameObject.GetComponent<DineroPlayer>();
+            if (dineroPlayer != null)
+            {
+                dineroPlayer.dinerito += count;
+                Destroy(gameObject);
+            }
+        }
     }
 }

@@ -5,5 +5,16 @@ using UnityEngine;
 
 public class LifeMax : Item
 {
-   
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            PlayerLife playerLife = other.gameObject.GetComponent<PlayerLife>();
+            if(playerLife != null) 
+            { 
+                playerLife.ChangeLife(count); 
+                Destroy(gameObject);            
+            }
+        }
+    }
 }

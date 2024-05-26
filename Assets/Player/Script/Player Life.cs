@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class PlayerLife : Life
 {
+
+    private void Update()
+    {
+        if (life >= 20)
+        {
+            life = 20;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("BulletEnemy"))

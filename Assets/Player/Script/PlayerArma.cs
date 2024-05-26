@@ -9,6 +9,11 @@ public class PlayerArma : Arma
         ContadorBalas();
     }
 
+    public void SumarBalas(int balas)
+    {
+        CountBullet += balas;
+    }
+
     public void ContadorBalas()
     {
         if (CountBullet > 0)
